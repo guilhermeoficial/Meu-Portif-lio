@@ -1,0 +1,107 @@
+/* Estilo Base */
+body {
+    background-color: #1a1a1a;
+    color: #c4c4c4;
+    font-family: 'Arial', sans-serif;
+}
+
+.navbar {
+    background-color: #111111;
+}
+
+.navbar-brand,
+.navbar-nav .nav-link {
+    color: #f0f0f0 !important;
+}
+
+.navbar-brand:hover,
+.navbar-nav .nav-link:hover {
+    color: #d4af37 !important;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.page-content {
+    padding: 2rem;
+    background-color: #2e2e2e;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+    color: #d4af37;
+}
+
+footer {
+    background-color: #111111;
+    padding: 15px;
+    color: #f0f0f0;
+}
+
+footer p {
+    margin: 0;
+}
+
+#date-time {
+    font-size: 0.9rem;
+}
+
+.profile-img,
+.gallery-img {
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    margin: 20px auto;
+    display: block;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.icon {
+    color: #d4af37;
+    font-size: 1.5rem;
+    margin-right: 10px;
+}
+
+/* Estilo da Lista com Ícone de Raio */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    padding: 10px 0;
+    font-size: 1.15rem;
+    color: #c4c4c4;
+    border-bottom: 1px solid #3e3e3e;
+    display: flex;
+    align-items: center;
+}
+
+ul li::before {
+    content: "\f0e7";
+    /* Ícone de raio */
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    color: #d4af37;
+    font-size: 1.2rem;
+    margin-right: 10px;
+}
+
+/* Responsividade */
+@media (max-width: 1366px) {
+    .page-content {
+        padding: 1rem;
+        font-size: 0.9rem;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 0.9rem;
+    }
+}
